@@ -48,19 +48,22 @@ EOF
 
 f3() {
 for i in `seq 1 $2`; do
-  echo "make_tuple(\"hello$i\",\"world$i\"),"
+ # echo "make_tuple(\"hello$i\",\"world$i\"),"
+  echo "make_tuple(\"hello_hello_hello_hello_$i\",\"world_world_world_world_$i\"),"
 done >> $1
 }
  
 f4() {
 for i in `seq 1 $2`; do
-  echo "{\"hello$i\",\"world$i\"},"
+#  echo "{\"hello$i\",\"world$i\"},"
+  echo "{\"hello_hello_hello_hello_$i\",\"world_world_world_world_$i\"},"
 done >> $1
 }
 
 f5() {
 for i in `seq 1 $2`; do
-  echo "{(char *)\"hello$i\",(char *)\"world$i\"},"
+#  echo "{(char *)\"hello$i\",(char *)\"world$i\"},"
+  echo "{(char *)\"hello_hello_hello_hello_$i\",(char *)\"world_world_world_world$i\"},"
 done >> $1
 }
 
