@@ -1,0 +1,4 @@
+perf.data*
+*.o
+*.sql
+parser1
